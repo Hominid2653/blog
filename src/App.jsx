@@ -1,15 +1,21 @@
 import React from "react";
-import blogData from "./blog";
-import Header from "./Header";
-import BlogList from "./BlogList";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import About from "./components/About";
+import ArticleList from "./components/ArticleList";
+import blog from "./data/Blog"; 
+
 
 function App() {
   return (
     <div>
-      <Header />
-      <BlogList posts={blogData} />
-      <Footer />
+      <Header name="My Personal Blog" />
+
+      <About
+        image="https://picsum.photos/150"
+        about="Welcome to my blog where I share React learning notes and projects."
+      />
+
+      <ArticleList posts={blog} />
     </div>
   );
 }
