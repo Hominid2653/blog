@@ -3,11 +3,14 @@ import { useState } from "react";
 
 
 function Header({ name }) {
-  const [headerName, setHeaderName] = useState(name);
-
   return (
-    <header>
-      <h1>{headerName}</h1>
+    <header className="text-center">
+      <h1 className="text-4xl font-bold tracking-tight">
+        {name}
+      </h1>
+      <p className="text-gray-500 mt-2">
+        Thoughts, code, and experiments
+      </p>
     </header>
   );
 }

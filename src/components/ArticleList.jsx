@@ -3,7 +3,7 @@ import Article from "./Article";
 
 function ArticleList({ posts }) {
   return (
-    <main>
+    <main className="space-y-5">
       {posts.map((post) => (
         <Article
           key={post.id}
