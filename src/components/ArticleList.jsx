@@ -3,7 +3,7 @@ import Article from "./Article";
 
 function ArticleList({ posts }) {
   return (
-    <main className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+    <main className="grid gap-8 grid-cols-1 md:grid-cols-2 items-stretch">
       {posts.map((post) => (
         <Article
           key={post.id}
